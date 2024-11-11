@@ -1,0 +1,29 @@
+<table>
+  <caption><h1 class="title">CALCULADORA ANGULAR</h1></caption>
+  <tr>
+    <td>Primeiro Número</td>
+    <td><input type="number" #firstNumber placeholder="Adicione um número"></td>
+  </tr>
+  <tr>
+    <td>Segundo Número</td>
+    <td><input type="number" #secondNumber placeholder="Adicione outro número"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="center-content">
+      <button (click)="add(firstNumber.value,secondNumber.value)">Adição</button>
+      <button (click)="subtract(firstNumber.value,secondNumber.value)">Subtração</button>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="center-content">
+      <button (click)="multiply(firstNumber.value,secondNumber.value)">Multiplicação</button>
+      <button (click)="divide(firstNumber.value,secondNumber.value)">Divisão</button>
+    </td>
+  </tr>
+  <tr>
+    <td><b>{{resultName}}</b></td>
+    <td><b>{{result}}</b></td>
+  </tr>
+</table>
